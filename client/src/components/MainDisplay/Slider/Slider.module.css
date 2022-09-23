@@ -1,0 +1,43 @@
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 30rem;
+    height: 18rem;
+    object-fit:contain;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    left: 15rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    right: 15rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slideActive {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
